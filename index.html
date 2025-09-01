@@ -553,6 +553,53 @@
 
 	<script src="assets/js/main.js"></script>
 	<script>
+		// Mobile navigation toggle - perbaiki agar bisa dibuka dan ditutup
+		const navToggle = document.querySelector('.nav__toggle');
+		const menu = document.querySelector('.menu');
+		
+		if (navToggle && menu) {
+			navToggle.addEventListener('click', (e) => {
+				e.stopPropagation(); // Mencegah event bubbling
+				const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+				navToggle.setAttribute('aria-expanded', !isExpanded);
+				menu.classList.toggle('menu--open');
+			});
+			
+			// Tutup menu saat klik di luar
+			document.addEventListener('click', (e) => {
+				if (!navToggle.contains(e.target) && !menu.contains(e.target)) {
+					menu.classList.remove('menu--open');
+					navToggle.setAttribute('aria-expanded', 'false');
+				}
+			});
+			
+			// Tutup menu saat link diklik
+			menu.querySelectorAll('a').forEach(link => {
+				link.addEventListener('click', () => {
+					menu.classList.remove('menu--open');
+					navToggle.setAttribute('aria-expanded', 'false');
+				});
+			});
+		}
+
+		// Sidebar toggle for mobile
+		const sidebarToggle = document.getElementById('sidebarToggle');
+		const sidebar = document.getElementById('sidebar');
+		
+		sidebarToggle.addEventListener('click', () => {
+			sidebar.classList.toggle('sidebar--open');
+			const isOpen = sidebar.classList.contains('sidebar--open');
+			sidebarToggle.setAttribute('aria-expanded', isOpen);
+		});
+
+		// Close sidebar when clicking outside
+		document.addEventListener('click', (e) => {
+			if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
+				sidebar.classList.remove('sidebar--open');
+				sidebarToggle.setAttribute('aria-expanded', 'false');
+			}
+		});
+		
 		// Smooth scroll for anchor links
 		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 			anchor.addEventListener('click', function (e) {
@@ -1006,80 +1053,23 @@
 			setInterval(next, 4000); // 4 detik antar slide
 		});
 
-		// Mobile Navigation Toggle - Perbaiki agar bisa dibuka dan ditutup
-		document.addEventListener('DOMContentLoaded', function() {
-			console.log('DOM loaded, setting up mobile navigation...');
-			
-			const navToggle = document.querySelector('.nav__toggle');
-			const menu = document.getElementById('menu');
-			
-			console.log('navToggle:', navToggle);
-			console.log('menu:', menu);
-			
-			if (navToggle && menu) {
-				console.log('Both elements found, adding event listeners...');
-				
-				navToggle.addEventListener('click', function(e) {
-					console.log('Toggle button clicked!');
-					e.preventDefault();
-					e.stopPropagation();
-					
-					const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-					console.log('Current state - isExpanded:', isExpanded);
-					
-					// Toggle menu state
-					if (isExpanded) {
-						console.log('Closing menu...');
-						menu.classList.remove('menu--open');
-						navToggle.setAttribute('aria-expanded', 'false');
-						navToggle.textContent = 'Menu ☰';
-					} else {
-						console.log('Opening menu...');
-						menu.classList.add('menu--open');
-						navToggle.setAttribute('aria-expanded', 'true');
-						navToggle.textContent = 'Tutup ✕';
-					}
-					
-					console.log('Menu classes after toggle:', menu.className);
-					console.log('Toggle aria-expanded:', navToggle.getAttribute('aria-expanded'));
-				});
-				
-				// Close menu when clicking outside
-				document.addEventListener('click', function(e) {
-					if (!navToggle.contains(e.target) && !menu.contains(e.target)) {
-						console.log('Clicking outside, closing menu...');
-						menu.classList.remove('menu--open');
-						navToggle.setAttribute('aria-expanded', 'false');
-						navToggle.textContent = 'Menu ☰';
-					}
-				});
-				
-				// Close menu when clicking on menu links
-				const menuLinks = menu.querySelectorAll('a');
-				menuLinks.forEach(link => {
-					link.addEventListener('click', function() {
-						console.log('Menu link clicked, closing menu...');
-						menu.classList.remove('menu--open');
-						navToggle.setAttribute('aria-expanded', 'false');
-						navToggle.textContent = 'Menu ☰';
-					});
-				});
-				
-				console.log('Event listeners added successfully!');
-			} else {
-				console.error('Missing elements: navToggle or menu');
-			}
-		});
-
 		// Hapus referensi kontrol mobile yang sudah ditiadakan dengan guard
+		if (typeof navToggle !== 'undefined' && navToggle) {
+			navToggle.addEventListener('click', () => {
+				if (menu.classList.contains('menu--open')) {
+					const firstLink = menu.querySelector('a');
+					if (firstLink) firstLink.focus();
+				}
+			});
+		}
+
 		// Perbarui handler Escape agar aman bila elemen tidak ada
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'Escape') {
-				const menu = document.getElementById('menu');
-				const navToggle = document.querySelector('.nav__toggle');
 				if (menu) menu.classList.remove('menu--open');
-				if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
-				if (navToggle) navToggle.textContent = 'Menu ☰';
+				if (typeof navToggle !== 'undefined' && navToggle) navToggle.setAttribute('aria-expanded', 'false');
+				if (sidebar) sidebar.classList.remove('sidebar--open');
+				if (sidebarToggle) sidebarToggle.setAttribute('aria-expanded', 'false');
 				if (searchResults) searchResults.classList.remove('active');
 			}
 		});
@@ -1162,5 +1152,3 @@
 	</script>
 </body>
 </html>
-
-
