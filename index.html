@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+	<meta name="theme-color" content="#0b4aa2">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<title>Informasi Pembuatan & Perbaikan Ijazah</title>
+	<meta name="description" content="Panduan ringkas dan jelas tentang tata cara pembuatan, perbaikan, duplikat, dan legalisir ijazah di Indonesia.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png">
+	<link rel="apple-touch-icon" href="Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png">
+</head>
+<body>
+	<header class="site-header" role="banner">
+		<a class="skip-link" href="#konten">Lewati ke konten utama</a>
+		
+		<!-- Header Main - Logo, Search, Navigation -->
+		<div class="header-main">
+			<div class="container">
+				<a class="brand" href="index.html" aria-label="Beranda">
+					<div class="brand-logo">
+						<img src="Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo Kemendikbud Tut Wuri Handayani" width="40" height="40">
+					</div>
+					<span>Info Ijazah</span>
+				</a>
+				
+				<div class="search-container">
+					<input type="search" class="search-box" placeholder="Cari informasi tentang ijazah..." aria-label="Cari" id="searchInput">
+					<button type="button" class="search-btn" aria-label="Cari" id="searchBtn">🔍</button>
+					<div class="search-results" id="searchResults"></div>
+				</div>
+
+				<!-- Mobile Nav Toggle -->
+				<button class="nav__toggle" type="button" aria-label="Buka menu" aria-controls="menu" aria-expanded="false">Menu ☰</button>
+				
+				<!-- Navigation Menu -->
+				<nav class="nav" aria-label="Navigasi utama">
+					<ul id="menu" class="menu">
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="#alur">Alur</a></li>
+						<li><a href="#kasus">Kasus</a></li>
+						<li><a href="#regulasi">Regulasi</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="#kontak" class="contact-btn">Hubungi Kami</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- Accessibility Controls -->
+		<div class="accessibility-controls">
+			<button type="button" class="accessibility-btn" id="increaseFont" aria-label="Perbesar teks">A+</button>
+			<button type="button" class="accessibility-btn" id="decreaseFont" aria-label="Perkecil teks">A-</button>
+		</div>
+	</header>
+
+	<!-- Breadcrumb Navigation -->
+	<div class="breadcrumb">
+		<div class="container">
+			<a href="index.html">Beranda</a>
+			<span class="breadcrumb-separator">/</span>
+			<span>Informasi Pembuatan & Perbaikan Ijazah</span>
+		</div>
+	</div>
+
+	<main id="konten" class="main" tabindex="-1">
+		<!-- Article Header -->
+		<section class="article-header">
+			<div class="container">
+				<h1 class="article-title">Informasi Pembuatan & Perbaikan Ijazah</h1>
+				<div class="article-meta">
+					<div class="article-date">Terakhir diperbarui: 20 Januari 2025</div>
+					<div class="share-buttons">
+						<a href="https://wa.me/?text=Informasi%20Pembuatan%20%26%20Perbaikan%20Ijazah%20-%20Info%20Ijazah" class="share-btn share-whatsapp" target="_blank" rel="noopener" aria-label="Bagikan via WhatsApp">📱</a>
+						<a href="https://twitter.com/intent/tweet?text=Informasi%20Pembuatan%20%26%20Perbaikan%20Ijazah%20-%20Info%20Ijazah&url=" class="share-btn share-twitter" target="_blank" rel="noopener" aria-label="Bagikan via Twitter">🐦</a>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=" class="share-btn share-facebook" target="_blank" rel="noopener" aria-label="Bagikan via Facebook">📘</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Hero Section -->
+		<section id="beranda" class="hero">
+			<div class="container">
+				<div class="hero-slideshow" aria-live="polite" aria-atomic="true">
+					<!-- Item akan diisi/diganti via JS dari array regulasi -->
+					<div class="slide active">Ijazah adalah dokumen resmi pengakuan kelulusan peserta didik (Pasal 1).</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Content Grid -->
+		<div class="content-grid">
+			<!-- Main Content -->
+			<div class="content-main">
+				<section id="alur" class="section">
+					<h2>Alur Umum Pengurusan Ijazah</h2>
+					<ol class="steps">
+						<li>
+							<h3><span class="step-icon" aria-hidden="true">🔎</span><span class="step-title">Identifikasi Kebutuhan</span></h3>
+							<p>Tentukan jenis layanan: penerbitan pertama (bagi yang belum menerima), perbaikan data, duplikat (hilang/rusak), atau legalisir.</p>
+						</li>
+						<li>
+							<h3><span class="step-icon" aria-hidden="true">🗂️</span><span class="step-title">Siapkan Dokumen</span></h3>
+							<p>Kumpulkan dokumen sesuai syarat di bawah. Pastikan nama, NISN/NIM, tempat-tanggal lahir, dan tahun lulus konsisten.</p>
+						</li>
+						<li>
+							<h3><span class="step-icon" aria-hidden="true">🏫</span><span class="step-title">Ajukan ke Satuan Pendidikan</span></h3>
+							<p>Datangi sekolah/kampus asal. Untuk yang sudah tutup/berganti, hubungi dinas pendidikan atau LLDikti sesuai jenjang.</p>
+						</li>
+						<li>
+							<h3><span class="step-icon" aria-hidden="true">✅</span><span class="step-title">Verifikasi dan Proses</span></h3>
+							<p>Pihak sekolah/dinas memverifikasi data. Jika diperlukan, dibuat Berita Acara/Keterangan Kehilangan/Surat Pernyataan.</p>
+						</li>
+						<li>
+							<h3><span class="step-icon" aria-hidden="true">📄</span><span class="step-title">Pengambilan Dokumen</span></h3>
+							<p>Ambil ijazah/duplikat/legisir sesuai jadwal. Periksa kembali ejaan nama, NIK, dan nomor ijazah.</p>
+						</li>
+					</ol>
+				</section>
+
+				<section id="alur-detail" class="section section--alt">
+					<h2>Alur Detail per Jenis Layanan</h2>
+					<div class="flows">
+						<article class="flow">
+							<h3>Penerbitan Pertama</h3>
+							<ol>
+								<li>Verifikasi kelulusan dan data peserta didik</li>
+								<li>Penyiapan blanko ijazah resmi</li>
+								<li>Pengisian data dan validasi</li>
+								<li>Penandatanganan dan stempel</li>
+								<li>Pencatatan dalam buku induk</li>
+							</ol>
+						</article>
+						<article class="flow">
+							<h3>Perbaikan Data</h3>
+							<ol>
+								<li>Pengajuan surat perbaikan data</li>
+								<li>Verifikasi dokumen pendukung</li>
+								<li>Pembuatan berita acara perbaikan</li>
+								<li>Penerbitan ijazah perbaikan</li>
+								<li>Pencabutan ijazah lama</li>
+							</ol>
+						</article>
+						<article class="flow">
+							<h3>Duplikat (Hilang/Rusak)</h3>
+							<ol>
+								<li>Pembuatan surat keterangan kehilangan</li>
+								<li>Penyiapan SPTJM dan dokumen pendukung</li>
+								<li>Verifikasi arsip dan data</li>
+								<li>Penerbitan surat keterangan pengganti</li>
+								<li>Pencatatan dalam buku khusus</li>
+							</ol>
+						</article>
+						<article class="flow">
+							<h3>Legalisir</h3>
+							<ol>
+								<li>Verifikasi keaslian dokumen</li>
+								<li>Pembubuhan stempel dan tanda tangan</li>
+								<li>Pencatatan dalam buku legalisir</li>
+								<li>Pemberian nomor urut legalisir</li>
+								<li>Penyerahan dokumen legalisir</li>
+							</ol>
+						</article>
+					</div>
+				</section>
+
+				<section id="kasus" class="section">
+					<h2>Kasus Umum & Alur Penanganan</h2>
+					<div class="flows">
+						<article class="flow">
+							<h3>Perbaikan Data</h3>
+							<p class="note">Untuk kesalahan penulisan nama, tanggal lahir, atau data lainnya</p>
+							<ol>
+								<li>Siapkan bukti sah (Akta/KK/KTP, ijazah asli).</li>
+								<li>Datang ke sekolah, minta verifikasi & formulir.</li>
+								<li>Jika perlu, minta surat keterangan kesalahan penulisan.</li>
+								<li>Terbitkan surat perbaikan, cek kembali ejaan/angka.</li>
+							</ol>
+						</article>
+						<article class="flow">
+							<h3>Ijazah Hilang</h3>
+							<p class="note">Untuk ijazah yang hilang atau tidak dapat ditemukan</p>
+							<ol>
+								<li>Surat Kehilangan Kepolisian (berlaku 14 hari).</li>
+								<li>SPTJM bermaterai + 2 Surat Pernyataan Saksi bila diminta.</li>
+								<li>Ajukan ke sekolah untuk surat keterangan pengganti.</li>
+								<li>Verifikasi arsip, lalu ambil dokumen pengganti.</li>
+							</ol>
+						</article>
+						<article class="flow">
+							<h3>Ijazah Rusak</h3>
+							<p class="note">Untuk ijazah yang rusak atau tidak layak baca</p>
+							<ol>
+								<li>Bawa ijazah rusak sebagai bukti.</li>
+								<li>Ajukan surat keterangan ijazah rusak.</li>
+								<li>Jika parah, proses duplikat seperti kasus hilang (tanpa SK Kehilangan).</li>
+							</ol>
+						</article>
+						<article class="flow">
+							<h3>Sekolah/Kampus Tutup</h3>
+							<p class="note">Untuk satuan pendidikan yang sudah tidak beroperasi</p>
+							<ol>
+								<li>Sekolah: hubungi Dinas Pendidikan; PT: hubungi LLDikti wilayah.</li>
+								<li>Siapkan identitas dan bukti kelulusan/nilai.</li>
+								<li>Ikuti prosedur instansi untuk pengganti/legisir.</li>
+							</ol>
+						</article>
+					</div>
+				</section>
+
+				<section id="dokumen-kasus" class="section section--alt">
+					<h2>Dokumen yang Diperlukan per Kasus</h2>
+					<div class="cards">
+						<article class="card">
+							<h3>Untuk Perbaikan Data</h3>
+							<ul>
+								<li>Ijazah asli yang akan diperbaiki</li>
+								<li>Akta Kelahiran atau KK asli</li>
+								<li>KTP asli dan fotokopi</li>
+								<li>Surat keterangan kesalahan penulisan</li>
+							</ul>
+						</article>
+						<article class="card">
+							<h3>Untuk Ijazah Hilang</h3>
+							<ul>
+								<li>Surat Keterangan Kehilangan dari Kepolisian</li>
+								<li>SPTJM bermaterai 6000</li>
+								<li>Surat Pernyataan Saksi (2 orang)</li>
+								<li>Fotokopi ijazah jika ada</li>
+							</ul>
+						</article>
+						<article class="card">
+							<h3>Untuk Ijazah Rusak</h3>
+							<ul>
+								<li>Ijazah rusak sebagai bukti</li>
+								<li>Surat keterangan ijazah rusak</li>
+								<li>Identitas diri (KTP/KK)</li>
+								<li>Bukti kelulusan atau nilai</li>
+							</ul>
+						</article>
+					</div>
+				</section>
+
+				<section id="syarat" class="section">
+					<h2>Syarat Dokumen</h2>
+					<div class="cards">
+						<article class="card">
+							<h3>Penerbitan/Perbaikan</h3>
+							<ul>
+								<li>Fotokopi KTP/KK yang masih berlaku</li>
+								<li>Akta Kelahiran atau Ijazah jenjang sebelumnya</li>
+								<li>Pas foto terbaru (sesuai ketentuan instansi)</li>
+								<li>Ijazah asli (untuk perbaikan) atau bukti kelulusan</li>
+								<li>Formulir permohonan dari sekolah/kampus</li>
+							</ul>
+						</article>
+						<article class="card">
+							<h3>Duplikat (Hilang/Rusak)</h3>
+							<ul>
+								<li>Surat Keterangan Kehilangan dari Kepolisian</li>
+								<li>Surat Pernyataan Tanggung Jawab Mutlak (SPTJM)</li>
+								<li>Fotokopi ijazah (jika ada) atau nilai/rapor</li>
+								<li>Identitas diri (KTP/KK) dan bukti kelulusan</li>
+							</ul>
+						</article>
+						<article class="card">
+							<h3>Legalisir</h3>
+							<ul>
+								<li>Ijazah asli</li>
+								<li>Fotokopi ijazah (sesuai jumlah legalisir)</li>
+								<li>Formulir dan materai bila diperlukan</li>
+							</ul>
+						</article>
+					</div>
+					<p class="note">Catatan: Ketentuan dapat berbeda di tiap satuan pendidikan/dinas. Selalu konfirmasi ke instansi terkait.</p>
+				</section>
+
+				<section id="regulasi" class="section section--alt">
+					<h2>Regulasi Terkait</h2>
+					<div class="regulasi">
+						<h3>Permendikbud Nomor 29 Tahun 2014</h3>
+						<p class="note">Tentang Penerbitan Ijazah, Sertifikat Kompetensi, dan Sertifikat Hasil Ujian Nasional Pendidikan Dasar dan Menengah</p>
+						<div class="regulasi-content">
+							<p><strong>Pasal 1</strong></p>
+							<p>Dalam Peraturan Menteri ini yang dimaksud dengan:</p>
+							<ol>
+								<li>Ijazah adalah dokumen resmi yang diterbitkan oleh satuan pendidikan sebagai pengakuan terhadap prestasi belajar dan/atau penyelesaian suatu jenjang pendidikan setelah lulus ujian yang diselenggarakan oleh satuan pendidikan.</li>
+								<li>Sertifikat Kompetensi adalah dokumen resmi yang diterbitkan oleh satuan pendidikan sebagai pengakuan terhadap kompetensi peserta didik setelah lulus uji kompetensi.</li>
+								<li>Sertifikat Hasil Ujian Nasional yang selanjutnya disebut SHUN adalah dokumen yang diterbitkan oleh satuan pendidikan berdasarkan hasil Ujian Nasional.</li>
+								<li>Satuan pendidikan adalah kelompok layanan pendidikan yang menyelenggarakan pendidikan pada jalur formal, nonformal, dan informal pada setiap jenjang dan jenis pendidikan.</li>
+								<li>Peserta didik adalah anggota masyarakat yang berusaha mengembangkan potensi diri melalui proses pembelajaran yang tersedia pada jalur, jenjang, dan jenis pendidikan tertentu.</li>
+							</ol>
+							
+							<p><strong>Pasal 2</strong></p>
+							<p>Ijazah diterbitkan oleh satuan pendidikan yang:</p>
+							<ol>
+								<li>Terakreditasi oleh Badan Akreditasi Nasional Sekolah/Madrasah atau Badan Akreditasi Nasional Pendidikan Nonformal.</li>
+								<li>Memiliki izin pendirian dan operasional dari pemerintah daerah atau pemerintah sesuai dengan kewenangannya.</li>
+							</ol>
+							
+							<p><strong>Pasal 3</strong></p>
+							<p>Ijazah diterbitkan untuk peserta didik yang:</p>
+							<ol>
+								<li>Lulus ujian yang diselenggarakan oleh satuan pendidikan.</li>
+								<li>Memenuhi persyaratan kelulusan yang ditetapkan oleh satuan pendidikan.</li>
+							</ol>
+							
+							<p><strong>Pasal 4</strong></p>
+							<p>Ijazah memuat:</p>
+							<ol>
+								<li>Identitas peserta didik.</li>
+								<li>Identitas satuan pendidikan.</li>
+								<li>Identitas program studi/kompetensi keahlian.</li>
+								<li>Tanggal dan tahun kelulusan.</li>
+								<li>Nomor seri ijazah.</li>
+								<li>Stempel dan tanda tangan kepala satuan pendidikan.</li>
+							</ol>
+							
+							<p><strong>Pasal 5</strong></p>
+							<p>Ijazah yang rusak, hilang, atau terdapat kesalahan dalam penulisan dapat diganti dengan ketentuan:</p>
+							<ol>
+								<li>Ijazah yang rusak dapat diganti dengan ijazah baru setelah ijazah yang rusak diserahkan kepada satuan pendidikan.</li>
+								<li>Ijazah yang hilang dapat diganti dengan ijazah baru setelah ada surat keterangan kehilangan dari kepolisian.</li>
+								<li>Ijazah yang terdapat kesalahan dalam penulisan dapat diganti dengan ijazah baru setelah ada surat keterangan dari satuan pendidikan.</li>
+							</ol>
+							
+							<p><strong>Pasal 6</strong></p>
+							<p>Ijazah yang sudah diterbitkan tidak dapat ditarik kembali, kecuali:</p>
+							<ol>
+								<li>Ada kesalahan dalam penulisan.</li>
+								<li>Ada perubahan data peserta didik.</li>
+								<li>Ada perubahan nama satuan pendidikan.</li>
+							</ol>
+							
+							<p><strong>Pasal 7</strong></p>
+							<p>Ijazah yang sudah ditarik kembali harus dimusnahkan oleh satuan pendidikan.</p>
+							
+							<p><strong>Pasal 8</strong></p>
+							<p>Satuan pendidikan wajib menyimpan arsip ijazah yang sudah diterbitkan paling sedikit 10 (sepuluh) tahun.</p>
+							
+							<p><strong>Pasal 9</strong></p>
+							<p>Ijazah yang diterbitkan oleh satuan pendidikan yang tidak memenuhi ketentuan sebagaimana dimaksud dalam Pasal 2 dinyatakan tidak sah.</p>
+							
+							<p><strong>Pasal 10</strong></p>
+							<p>Peraturan Menteri ini mulai berlaku pada tanggal diundangkan.</p>
+							
+							<p class="note">Agar setiap orang mengetahuinya, memerintahkan pengundangan Peraturan Menteri ini dengan penempatannya dalam Berita Negara Republik Indonesia.</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="faq" class="section">
+					<h2>Pertanyaan yang Sering Diajukan</h2>
+					<div class="faq">
+						<details open>
+							<summary>Berapa lama proses perbaikan/duplikat?</summary>
+							<div>
+								<p>Umumnya 3–14 hari kerja, tergantung verifikasi dan ketersediaan arsip. Untuk kasus sederhana seperti perbaikan data, proses bisa selesai dalam 3-5 hari kerja. Sedangkan untuk duplikat ijazah hilang, proses memakan waktu 7-14 hari kerja karena memerlukan verifikasi yang lebih detail.</p>
+							</div>
+						</details>
+						<details>
+							<summary>Apakah bisa diurus perwakilan?</summary>
+							<div>
+								<p>Bisa, dengan surat kuasa bermaterai dan identitas pemberi/kuasa. Surat kuasa harus mencantumkan data lengkap pemberi kuasa dan penerima kuasa, serta jenis layanan yang diurus. Penerima kuasa wajib membawa identitas asli dan fotokopi KTP pemberi kuasa.</p>
+							</div>
+						</details>
+						<details>
+							<summary>Butuh legalisir berapa lembar?</summary>
+							<div>
+								<p>Sesuaikan kebutuhan pendaftaran kerja/kampus. Banyak instansi menerima scan legalisir. Umumnya diperlukan 2-3 lembar legalisir untuk keperluan pendaftaran. Namun sebaiknya tanyakan terlebih dahulu ke instansi tujuan berapa lembar yang diperlukan.</p>
+							</div>
+						</details>
+						<details>
+							<summary>Apakah ada format resmi?</summary>
+							<div>
+								<p>Ikuti kebijakan satuan pendidikan dan regulasi Kemendikbudristek/LLDikti yang berlaku. Setiap satuan pendidikan memiliki format standar yang sudah disesuaikan dengan regulasi nasional. Format ini dapat diunduh di halaman Unduhan.</p>
+							</div>
+						</details>
+						<details>
+							<summary>Bagaimana jika sekolah sudah tutup?</summary>
+							<div>
+								<p>Untuk sekolah yang sudah tutup, hubungi Dinas Pendidikan Kabupaten/Kota setempat. Untuk perguruan tinggi, hubungi LLDikti wilayah. Mereka akan membantu proses penggantian atau legalisasi ijazah sesuai dengan prosedur yang berlaku.</p>
+							</div>
+						</details>
+						<details>
+							<summary>Berapa biaya pengurusan?</summary>
+							<div>
+								<p>Biaya pengurusan sesuai dengan ketentuan satuan pendidikan dan tidak ada biaya tambahan yang tidak sah. Umumnya hanya dikenakan biaya materai dan biaya administrasi standar. Pastikan meminta rincian biaya resmi sebelum melakukan pembayaran.</p>
+							</div>
+						</details>
+					</div>
+				</section>
+
+				<section id="tips" class="section section--alt">
+					<h2>Tips Pengurusan</h2>
+					<div class="cards">
+						<article class="card">
+							<h3>Persiapan Dokumen</h3>
+							<ul>
+								<li>Selalu bawa dokumen asli dan fotokopi</li>
+								<li>Pastikan data konsisten antar dokumen</li>
+								<li>Dokumen tidak boleh rusak atau tidak terbaca</li>
+								<li>Fotokopi harus jelas dan lengkap</li>
+							</ul>
+						</article>
+						<article class="card">
+							<h3>Waktu Kunjungan</h3>
+							<ul>
+								<li>Datang pada jam kerja resmi</li>
+								<li>Hindari hari Senin dan Jumat (biasanya ramai)</li>
+								<li>Datang pagi untuk menghindari antrian</li>
+								<li>Bawa bekal dan air minum</li>
+							</ul>
+						</article>
+						<article class="card">
+							<h3>Setelah Pengurusan</h3>
+							<ul>
+								<li>Simpan nomor berkas dengan baik</li>
+								<li>Catat tanggal pengambilan</li>
+								<li>Periksa dokumen sebelum pulang</li>
+								<li>Simpan salinan digital sebagai backup</li>
+							</ul>
+						</article>
+					</div>
+				</section>
+
+				<section id="kontak" class="section">
+					<h2>Kontak & Sumber Rujukan</h2>
+					<div class="cards">
+						<article class="card">
+							<h3>Informasi Umum</h3>
+							<p>Hubungi TU/Baak sekolah/kampus asal untuk jadwal layanan dan formulir yang diperlukan. Pastikan membawa dokumen yang lengkap saat berkunjung.</p>
+							<p class="note"><strong>Jam Layanan:</strong> Senin-Jumat 08.00-16.00 WIB</p>
+						</article>
+						<article class="card">
+							<h3>Kontak Darurat</h3>
+							<p>Untuk pertanyaan mendesak atau kasus khusus, dapat menghubungi kontak darurat yang tersedia di satuan pendidikan masing-masing.</p>
+							<p class="note"><strong>Layanan:</strong> 24 jam untuk kasus darurat</p>
+						</article>
+						<article class="card">
+							<h3>Konsultasi Online</h3>
+							<p>Beberapa satuan pendidikan menyediakan layanan konsultasi online melalui email atau platform digital untuk memudahkan masyarakat.</p>
+							<p class="note"><strong>Respon:</strong> 1-2 hari kerja</p>
+						</article>
+					</div>
+				</section>
+
+				<section id="rujukan" class="section section--alt">
+					<h2>Rujukan Resmi</h2>
+					<div class="grid">
+						<div>
+							<h3>Regulasi Nasional</h3>
+							<ul class="refs">
+								<li>Regulasi Kemendikbudristek terkait penulisan dan perbaikan ijazah</li>
+								<li>Peraturan Menteri Pendidikan dan Kebudayaan</li>
+								<li>Keputusan Direktorat Jenderal Pendidikan</li>
+								<li>Surat Edaran terkait penerbitan ijazah</li>
+							</ul>
+						</div>
+						<div>
+							<h3>Instansi Terkait</h3>
+							<ul class="refs">
+								<li>LLDikti wilayah setempat (untuk perguruan tinggi)</li>
+								<li>Dinas Pendidikan Kab/Kota/Provinsi (untuk sekolah)</li>
+								<li>Badan Akreditasi Nasional (BAN)</li>
+								<li>Kantor Wilayah Kementerian Agama</li>
+							</ul>
+						</div>
+					</div>
+					<p class="note">Tambahkan tautan Google Drive internal Anda bila diperlukan untuk dokumen rujukan tambahan.</p>
+				</section>
+
+				<section id="formulir-kontak" class="section">
+					<h2>Formulir Kontak</h2>
+					<div class="contact-form">
+						<p>Gunakan formulir di bawah ini untuk mengajukan pertanyaan atau permintaan informasi lebih lanjut:</p>
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="nama">Nama Lengkap *</label>
+								<input type="text" id="nama" name="nama" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Email *</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+							<div class="form-group">
+								<label for="telepon">Nomor Telepon</label>
+								<input type="tel" id="telepon" name="telepon">
+							</div>
+							<div class="form-group">
+								<label for="subjek">Subjek *</label>
+								<select id="subjek" name="subjek" required>
+									<option value="">Pilih subjek</option>
+									<option value="perbaikan">Perbaikan Data Ijazah</option>
+									<option value="duplikat">Duplikat Ijazah</option>
+									<option value="legalisir">Legalisir Ijazah</option>
+									<option value="lainnya">Lainnya</option>
+								</select>
+							</div>
+							<div class="form-group full-width">
+								<label for="pesan">Pesan *</label>
+								<textarea id="pesan" name="pesan" rows="5" required placeholder="Tuliskan pertanyaan atau permintaan Anda di sini..."></textarea>
+							</div>
+							<div class="form-group full-width">
+								<button type="submit" class="btn">Kirim Pesan</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Sidebar -->
+			<aside class="content-sidebar" id="sidebar">
+				<!-- Mobile Sidebar Toggle -->
+				<button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+					<span class="sidebar-toggle-icon">☰</span>
+					<span class="sidebar-toggle-text">Layanan Cepat</span>
+				</button>
+				
+				<div class="sidebar-content">
+					<h3>Layanan Cepat</h3>
+					<div class="quick-links">
+						<a href="unduhan.html" class="btn btn--ghost btn--full">☁️ Unduh Dokumen</a>
+						<a href="#alur" class="btn btn--ghost btn--full">📋 Lihat Alur</a>
+						<a href="#kasus" class="btn btn--ghost btn--full">🔍 Lihat Kasus</a>
+						<a href="#faq" class="btn btn--ghost btn--full">❓ FAQ</a>
+					</div>
+					
+					<h3>Informasi Penting</h3>
+					<div class="info-box">
+						<p><strong>Masa Berlaku:</strong> Surat kehilangan kepolisian berlaku 14 hari</p>
+						<p><strong>Arsip Wajib:</strong> Satuan pendidikan wajib menyimpan arsip ijazah minimal 10 tahun</p>
+						<p><strong>Akreditasi:</strong> Hanya satuan pendidikan terakreditasi yang dapat menerbitkan ijazah</p>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer__inner">
+			<p>© <span id="year"></span> Informasi Ijazah. Dibuat untuk mempermudah akses informasi.</p>
+			<a href="#beranda" class="to-top" aria-label="Kembali ke atas">↑</a>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+	<script>
+		// Smooth scroll for anchor links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth'
+					});
+				}
+			});
+		});
+		
+		// Smooth scroll to top when clicking Beranda
+		document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
+			e.preventDefault();
+			if (window.scrollY > 0) {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+			// Hilangkan fokus agar border/outline tidak tertinggal
+			this.blur();
+		});
+
+		// Search functionality
+		const searchInput = document.getElementById('searchInput');
+		const searchBtn = document.getElementById('searchBtn');
+		const searchResults = document.getElementById('searchResults');
+
+		// Search data - all content from the website (diperluas)
+		const searchData = [
+			// Beranda & Umum
+			{
+				title: "Info Ijazah",
+				content: "Portal informasi lengkap tentang pembuatan, perbaikan, duplikat, dan legalisir ijazah di Indonesia. Berdasarkan Permendikbud Nomor 29 Tahun 2014.",
+				section: "Beranda",
+				link: "#beranda"
+			},
+			{
+				title: "Kemendikbudristek",
+				content: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia. Lembaga resmi yang mengatur kebijakan pendidikan nasional.",
+				section: "Beranda",
+				link: "#beranda"
+			},
+			
+			// Alur & Proses
+			{
+				title: "Alur Umum Pengurusan Ijazah",
+				content: "Panduan praktis untuk pembuatan, perbaikan data, duplikat, dan legalisir ijazah. Dirangkum agar mudah diikuti dengan informasi regulasi resmi dari Kemendikbudristek.",
+				section: "Alur",
+				link: "#alur"
+			},
+			{
+				title: "Identifikasi Kebutuhan",
+				content: "Tentukan jenis layanan: penerbitan pertama (bagi yang belum menerima), perbaikan data, duplikat (hilang/rusak), atau legalisir.",
+				section: "Alur",
+				link: "#alur"
+			},
+			{
+				title: "Siapkan Dokumen",
+				content: "Kumpulkan dokumen sesuai syarat di bawah. Pastikan nama, NISN/NIM, tempat-tanggal lahir, dan tahun lulus konsisten.",
+				section: "Alur",
+				link: "#alur"
+			},
+			{
+				title: "Ajukan ke Satuan Pendidikan",
+				content: "Datangi sekolah/kampus asal. Untuk yang sudah tutup/berganti, hubungi dinas pendidikan atau LLDikti sesuai jenjang.",
+				section: "Alur",
+				link: "#alur"
+			},
+			{
+				title: "Verifikasi dan Proses",
+				content: "Pihak sekolah/dinas memverifikasi data. Jika diperlukan, dibuat Berita Acara/Keterangan Kehilangan/Surat Pernyataan.",
+				section: "Alur",
+				link: "#alur"
+			},
+			{
+				title: "Pengambilan Dokumen",
+				content: "Ambil ijazah/duplikat/legisir sesuai jadwal. Periksa kembali ejaan nama, NIK, dan nomor ijazah.",
+				section: "Alur",
+				link: "#alur"
+			},
+			
+			// Alur Detail
+			{
+				title: "Penerbitan Pertama",
+				content: "Verifikasi kelulusan dan data peserta didik, penyiapan blanko ijazah resmi, pengisian data dan validasi, penandatanganan dan stempel, pencatatan dalam buku induk.",
+				section: "Alur Detail",
+				link: "#alur-detail"
+			},
+			{
+				title: "Perbaikan Data",
+				content: "Pengajuan surat perbaikan data, verifikasi dokumen pendukung, pembuatan berita acara perbaikan, penerbitan ijazah perbaikan, pencabutan ijazah lama.",
+				section: "Alur Detail",
+				link: "#alur-detail"
+			},
+			{
+				title: "Duplikat Ijazah",
+				content: "Pembuatan surat keterangan kehilangan, penyiapan SPTJM dan dokumen pendukung, verifikasi arsip dan data, penerbitan surat keterangan pengganti, pencatatan dalam buku khusus.",
+				section: "Alur Detail",
+				link: "#alur-detail"
+			},
+			{
+				title: "Legalisir Ijazah",
+				content: "Verifikasi keaslian dokumen, pembubuhan stempel dan tanda tangan, pencatatan dalam buku legalisir, pemberian nomor urut legalisir, penyerahan dokumen legalisir.",
+				section: "Alur Detail",
+				link: "#alur-detail"
+			},
+			
+			// Kasus & Penanganan
+			{
+				title: "Kasus Umum & Alur Penanganan",
+				content: "Panduan lengkap untuk berbagai kasus pengurusan ijazah termasuk perbaikan data, kehilangan, kerusakan, dan sekolah yang sudah tutup.",
+				section: "Kasus",
+				link: "#kasus"
+			},
+			{
+				title: "Perbaikan Data Ijazah",
+				content: "Untuk kesalahan penulisan nama, tanggal lahir, atau data lainnya. Siapkan bukti sah (Akta/KK/KTP, ijazah asli), datang ke sekolah, minta verifikasi & formulir.",
+				section: "Kasus",
+				link: "#kasus"
+			},
+			{
+				title: "Ijazah Hilang",
+				content: "Untuk ijazah yang hilang atau tidak dapat ditemukan. Surat Kehilangan Kepolisian (berlaku 14 hari), SPTJM bermaterai + 2 Surat Pernyataan Saksi bila diminta.",
+				section: "Kasus",
+				link: "#kasus"
+			},
+			{
+				title: "Ijazah Rusak",
+				content: "Untuk ijazah yang rusak atau tidak layak baca. Bawa ijazah rusak sebagai bukti, ajukan surat keterangan ijazah rusak.",
+				section: "Kasus",
+				link: "#kasus"
+			},
+			{
+				title: "Sekolah Tutup",
+				content: "Untuk satuan pendidikan yang sudah tidak beroperasi. Sekolah: hubungi Dinas Pendidikan; PT: hubungi LLDikti wilayah.",
+				section: "Kasus",
+				link: "#kasus"
+			},
+			
+			// Dokumen & Syarat
+			{
+				title: "Dokumen yang Diperlukan",
+				content: "Surat pengantar, fotokopi ijazah, surat kehilangan kepolisian, surat pernyataan saksi, SPTJM bermaterai, akta kelahiran, KTP, pas foto.",
+				section: "Dokumen",
+				link: "#dokumen-kasus"
+			},
+			{
+				title: "Syarat Dokumen",
+				content: "Fotokopi KTP/KK yang masih berlaku, Akta Kelahiran atau Ijazah jenjang sebelumnya, Pas foto terbaru, Ijazah asli (untuk perbaikan) atau bukti kelulusan.",
+				section: "Syarat",
+				link: "#syarat"
+			},
+			{
+				title: "Surat Keterangan Kehilangan",
+				content: "Surat dari kepolisian yang menyatakan ijazah hilang. Berlaku 14 hari sejak diterbitkan. Diperlukan untuk pengajuan duplikat ijazah.",
+				section: "Dokumen",
+				link: "#dokumen-kasus"
+			},
+			{
+				title: "SPTJM",
+				content: "Surat Pernyataan Tanggung Jawab Mutlak. Dokumen bermaterai yang menyatakan kebenaran data dan tanggung jawab pemohon.",
+				section: "Dokumen",
+				link: "#syarat"
+			},
+			
+			// Regulasi & Pasal
+			{
+				title: "Permendikbud Nomor 29 Tahun 2014",
+				content: "Peraturan Menteri tentang Penerbitan Ijazah, Sertifikat Kompetensi, dan Sertifikat Hasil Ujian Nasional Pendidikan Dasar dan Menengah.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			{
+				title: "Pasal 1 - Definisi",
+				content: "Ijazah adalah dokumen resmi yang diterbitkan oleh satuan pendidikan sebagai pengakuan terhadap prestasi belajar dan/atau penyelesaian suatu jenjang pendidikan setelah lulus ujian.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			{
+				title: "Pasal 2 - Penerbitan",
+				content: "Ijazah diterbitkan oleh satuan pendidikan yang terakreditasi dan memiliki izin pendirian dan operasional dari pemerintah daerah atau pemerintah.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			{
+				title: "Pasal 3 - Syarat Kelulusan",
+				content: "Ijazah diterbitkan untuk peserta didik yang lulus ujian yang diselenggarakan oleh satuan pendidikan dan memenuhi persyaratan kelulusan yang ditetapkan.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			{
+				title: "Pasal 4 - Isi Ijazah",
+				content: "Ijazah memuat identitas peserta didik, satuan pendidikan, program studi, tanggal dan tahun kelulusan, nomor seri ijazah, stempel dan tanda tangan kepala satuan pendidikan.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			{
+				title: "Pasal 5 - Penggantian",
+				content: "Ijazah yang rusak, hilang, atau terdapat kesalahan dalam penulisan dapat diganti dengan ketentuan dan bukti yang diperlukan.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			{
+				title: "Pasal 8 - Arsip",
+				content: "Satuan pendidikan wajib menyimpan arsip ijazah yang sudah diterbitkan paling sedikit 10 (sepuluh) tahun.",
+				section: "Regulasi",
+				link: "#regulasi"
+			},
+			
+			// FAQ & Tips
+			{
+				title: "FAQ - Pertanyaan Umum",
+				content: "Berapa lama proses perbaikan/duplikat, apakah bisa diurus perwakilan, butuh legalisir berapa lembar, apakah ada format resmi, bagaimana jika sekolah sudah tutup.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			{
+				title: "Lama Proses Pengurusan",
+				content: "Umumnya 3–14 hari kerja, tergantung verifikasi dan ketersediaan arsip. Untuk kasus sederhana seperti perbaikan data, proses bisa selesai dalam 3-5 hari kerja.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			{
+				title: "Pengurusan Perwakilan",
+				content: "Bisa, dengan surat kuasa bermaterai dan identitas pemberi/kuasa. Surat kuasa harus mencantumkan data lengkap pemberi kuasa dan penerima kuasa.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			{
+				title: "Legalisir Ijazah",
+				content: "Sesuaikan kebutuhan pendaftaran kerja/kampus. Banyak instansi menerima scan legalisir. Umumnya diperlukan 2-3 lembar legalisir untuk keperluan pendaftaran.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			{
+				title: "Format Resmi",
+				content: "Ikuti kebijakan satuan pendidikan dan regulasi Kemendikbudristek/LLDikti yang berlaku. Setiap satuan pendidikan memiliki format standar yang sudah disesuaikan.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			{
+				title: "Sekolah Tutup",
+				content: "Untuk sekolah yang sudah tutup, hubungi Dinas Pendidikan Kabupaten/Kota setempat. Untuk perguruan tinggi, hubungi LLDikti wilayah.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			{
+				title: "Biaya Pengurusan",
+				content: "Biaya pengurusan sesuai dengan ketentuan satuan pendidikan dan tidak ada biaya tambahan yang tidak sah. Umumnya hanya dikenakan biaya materai dan biaya administrasi standar.",
+				section: "FAQ",
+				link: "#faq"
+			},
+			
+			// Tips & Kontak
+			{
+				title: "Tips Pengurusan Ijazah",
+				content: "Persiapan dokumen, waktu kunjungan, setelah pengurusan. Selalu bawa dokumen asli dan fotokopi, pastikan data konsisten antar dokumen.",
+				section: "Tips",
+				link: "#tips"
+			},
+			{
+				title: "Jam Layanan",
+				content: "Senin-Jumat 08.00-16.00 WIB. Hindari hari Senin dan Jumat (biasanya ramai), datang pagi untuk menghindari antrian.",
+				section: "Kontak",
+				link: "#kontak"
+			},
+			{
+				title: "Kontak Darurat",
+				content: "Untuk pertanyaan mendesak atau kasus khusus, dapat menghubungi kontak darurat yang tersedia di satuan pendidikan masing-masing. Layanan 24 jam untuk kasus darurat.",
+				section: "Kontak",
+				link: "#kontak"
+			},
+			{
+				title: "Konsultasi Online",
+				content: "Beberapa satuan pendidikan menyediakan layanan konsultasi online melalui email atau platform digital untuk memudahkan masyarakat. Respon 1-2 hari kerja.",
+				section: "Kontak",
+				link: "#kontak"
+			},
+			
+			// Rujukan & Instansi
+			{
+				title: "LLDikti",
+				content: "Lembaga Layanan Pendidikan Tinggi. Instansi yang mengatur dan mengawasi perguruan tinggi di wilayah tertentu. Hubungi untuk kasus perguruan tinggi.",
+				section: "Rujukan",
+				link: "#rujukan"
+			},
+			{
+				title: "Dinas Pendidikan",
+				content: "Instansi pemerintah daerah yang mengatur dan mengawasi pendidikan di tingkat kabupaten/kota. Hubungi untuk kasus sekolah dasar dan menengah.",
+				section: "Rujukan",
+				link: "#rujukan"
+			},
+			{
+				title: "Badan Akreditasi Nasional",
+				content: "BAN adalah lembaga yang melakukan penilaian dan penetapan kelayakan program dan satuan pendidikan. Hanya satuan pendidikan terakreditasi yang dapat menerbitkan ijazah.",
+				section: "Rujukan",
+				link: "#rujukan"
+			},
+			
+			// Unduhan & Formulir
+			{
+				title: "Unduhan Dokumen",
+				content: "Download dokumen-dokumen terkait pengurusan ijazah, formulir, dan regulasi resmi. Tersedia format standar untuk berbagai jenis layanan.",
+				section: "Unduhan",
+				link: "unduhan.html"
+			},
+			{
+				title: "Formulir Kontak",
+				content: "Formulir untuk mengajukan pertanyaan atau permintaan informasi lebih lanjut. Isi nama lengkap, email, nomor telepon, subjek, dan pesan.",
+				section: "Formulir",
+				link: "#formulir-kontak"
+			}
+		];
+
+		// Search function
+		function performSearch(query) {
+			if (query.length < 2) {
+				searchResults.classList.remove('active');
+				return;
+			}
+
+			const results = searchData.filter(item => {
+				const searchText = query.toLowerCase();
+				return item.title.toLowerCase().includes(searchText) ||
+					   item.content.toLowerCase().includes(searchText) ||
+					   item.section.toLowerCase().includes(searchText);
+			});
+
+			displaySearchResults(results, query);
+		}
+
+		// Display search results
+		function displaySearchResults(results, query) {
+			searchResults.innerHTML = '';
+
+			if (results.length === 0) {
+				searchResults.innerHTML = '<div class="no-results">Tidak ada hasil untuk "' + query + '"</div>';
+			} else {
+				results.slice(0, 8).forEach(result => {
+					const resultItem = document.createElement('div');
+					resultItem.className = 'search-result-item';
+					
+					const highlightedTitle = highlightText(result.title, query);
+					const highlightedContent = highlightText(result.content.substring(0, 100) + '...', query);
+					
+					resultItem.innerHTML = `
+						<div class="search-result-title">${highlightedTitle}</div>
+						<div class="search-result-excerpt">${highlightedContent}</div>
+						<div class="search-result-section">${result.section}</div>
+					`;
+					
+					resultItem.addEventListener('click', () => {
+						if (result.link.startsWith('#')) {
+							// Internal link
+							const target = document.querySelector(result.link);
+							if (target) {
+								target.scrollIntoView({ behavior: 'smooth' });
+							}
+						} else {
+							// External link
+							window.location.href = result.link;
+						}
+						searchResults.classList.remove('active');
+						searchInput.value = '';
+					});
+					
+					searchResults.appendChild(resultItem);
+				});
+			}
+			
+			searchResults.classList.add('active');
+		}
+
+		// Highlight search terms
+		function highlightText(text, query) {
+			const regex = new RegExp(`(${query})`, 'gi');
+			return text.replace(regex, '<span class="search-highlight">$1</span>');
+		}
+
+		// Event listeners
+		searchInput.addEventListener('input', (e) => {
+			performSearch(e.target.value);
+		});
+
+		searchBtn.addEventListener('click', () => {
+			performSearch(searchInput.value);
+		});
+
+		searchInput.addEventListener('keypress', (e) => {
+			if (e.key === 'Enter') {
+				performSearch(searchInput.value);
+			}
+		});
+
+		// Close search results when clicking outside
+		document.addEventListener('click', (e) => {
+			if (!searchInput.contains(e.target) && !searchResults.contains(e.target) && !searchBtn.contains(e.target)) {
+				searchResults.classList.remove('active');
+			}
+		});
+
+		// Close search results on escape key
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				searchResults.classList.remove('active');
+				searchInput.blur();
+			}
+		});
+
+		// Slideshow teks hero
+		document.addEventListener('DOMContentLoaded', function(){
+			const container = document.querySelector('.hero-slideshow');
+			if (!container) return;
+			const messages = [
+				"Selamat datang di Portal Informasi Ijazah - Temukan semua yang perlu Anda ketahui tentang pembuatan dan perbaikan ijazah.",
+				"Ijazah adalah dokumen resmi pengakuan kelulusan peserta didik yang diterbitkan oleh satuan pendidikan terakreditasi.",
+				"Layanan perbaikan data ijazah tersedia untuk kesalahan penulisan nama, tanggal, atau informasi lainnya.",
+				"Duplikat ijazah dapat dibuat jika dokumen asli hilang atau rusak dengan melampirkan surat kehilangan dari kepolisian.",
+				"Legalisir ijazah diperlukan untuk keperluan administrasi, pekerjaan, atau melanjutkan pendidikan ke jenjang berikutnya.",
+				"Semua layanan ijazah mengikuti regulasi resmi Kemendikbudristek untuk menjamin keabsahan dokumen.",
+				"Tim kami siap membantu Anda memahami alur dan persyaratan pengurusan ijazah dengan mudah dan jelas.",
+				"Konsultasi gratis tersedia untuk memastikan Anda memiliki semua dokumen yang diperlukan sebelum mengajukan permohonan."
+			];
+			let index = 0;
+			
+			function render(text){
+				let node = container.querySelector('.slide');
+				if (!node) {
+					node = document.createElement('div');
+					node.className = 'slide';
+					container.appendChild(node);
+				}
+				
+				// Fade out slide lama dengan cepat
+				node.classList.remove('active');
+				
+				// Tunggu fade out selesai, lalu ganti text dan fade in
+				setTimeout(() => {
+					node.textContent = text;
+					node.classList.add('active');
+				}, 300); // Tunggu 300ms untuk fade out
+			}
+			
+			function next(){
+				index = (index + 1) % messages.length;
+				render(messages[index]);
+			}
+			
+			render(messages[index]);
+			setInterval(next, 4000); // 4 detik antar slide
+		});
+
+		// Mobile Navigation Toggle - Perbaiki agar bisa dibuka dan ditutup
+		document.addEventListener('DOMContentLoaded', function() {
+			console.log('DOM loaded, setting up mobile navigation...');
+			
+			const navToggle = document.querySelector('.nav__toggle');
+			const menu = document.getElementById('menu');
+			
+			console.log('navToggle:', navToggle);
+			console.log('menu:', menu);
+			
+			if (navToggle && menu) {
+				console.log('Both elements found, adding event listeners...');
+				
+				navToggle.addEventListener('click', function(e) {
+					console.log('Toggle button clicked!');
+					e.preventDefault();
+					e.stopPropagation();
+					
+					const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+					console.log('Current state - isExpanded:', isExpanded);
+					
+					// Toggle menu state
+					if (isExpanded) {
+						console.log('Closing menu...');
+						menu.classList.remove('menu--open');
+						navToggle.setAttribute('aria-expanded', 'false');
+						navToggle.textContent = 'Menu ☰';
+					} else {
+						console.log('Opening menu...');
+						menu.classList.add('menu--open');
+						navToggle.setAttribute('aria-expanded', 'true');
+						navToggle.textContent = 'Tutup ✕';
+					}
+					
+					console.log('Menu classes after toggle:', menu.className);
+					console.log('Toggle aria-expanded:', navToggle.getAttribute('aria-expanded'));
+				});
+				
+				// Close menu when clicking outside
+				document.addEventListener('click', function(e) {
+					if (!navToggle.contains(e.target) && !menu.contains(e.target)) {
+						console.log('Clicking outside, closing menu...');
+						menu.classList.remove('menu--open');
+						navToggle.setAttribute('aria-expanded', 'false');
+						navToggle.textContent = 'Menu ☰';
+					}
+				});
+				
+				// Close menu when clicking on menu links
+				const menuLinks = menu.querySelectorAll('a');
+				menuLinks.forEach(link => {
+					link.addEventListener('click', function() {
+						console.log('Menu link clicked, closing menu...');
+						menu.classList.remove('menu--open');
+						navToggle.setAttribute('aria-expanded', 'false');
+						navToggle.textContent = 'Menu ☰';
+					});
+				});
+				
+				console.log('Event listeners added successfully!');
+			} else {
+				console.error('Missing elements: navToggle or menu');
+			}
+		});
+
+		// Hapus referensi kontrol mobile yang sudah ditiadakan dengan guard
+		// Perbarui handler Escape agar aman bila elemen tidak ada
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				const menu = document.getElementById('menu');
+				const navToggle = document.querySelector('.nav__toggle');
+				if (menu) menu.classList.remove('menu--open');
+				if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+				if (navToggle) navToggle.textContent = 'Menu ☰';
+				if (searchResults) searchResults.classList.remove('active');
+			}
+		});
+
+		// Accessibility Controls
+		const increaseFontBtn = document.getElementById('increaseFont');
+		const decreaseFontBtn = document.getElementById('decreaseFont');
+		
+		let currentFontSize = 0; // 0 = normal, 1 = large, 2 = extra large
+		
+		function applyFontClass(level){
+			document.body.classList.remove('large-text', 'extra-large-text');
+			if (level === 1) document.body.classList.add('large-text');
+			if (level === 2) document.body.classList.add('extra-large-text');
+		}
+		
+		function updateFontSize(){
+			applyFontClass(currentFontSize);
+			localStorage.setItem('fontSize', String(currentFontSize));
+		}
+		
+		if (increaseFontBtn) {
+			increaseFontBtn.addEventListener('click', () => {
+				if (currentFontSize < 2) {
+					currentFontSize++;
+					updateFontSize();
+				}
+			});
+		}
+		
+		if (decreaseFontBtn) {
+			decreaseFontBtn.addEventListener('click', () => {
+				if (currentFontSize > 0) {
+					currentFontSize--;
+					updateFontSize();
+				}
+			});
+		}
+		
+		// Load saved preferences
+		window.addEventListener('load', () => {
+			const savedFontSize = localStorage.getItem('fontSize');
+			if (savedFontSize !== null) {
+				currentFontSize = parseInt(savedFontSize, 10);
+			}
+			updateFontSize();
+		});
+
+		// Hide accessibility controls on mobile when not needed
+		function checkMobileAccessibility() {
+			const accessibilityControls = document.querySelector('.accessibility-controls');
+			if (window.innerWidth <= 768) {
+				accessibilityControls.style.display = 'none';
+			} else {
+				accessibilityControls.style.display = 'flex';
+			}
+		}
+
+		window.addEventListener('resize', checkMobileAccessibility);
+		checkMobileAccessibility();
+
+		// Mobile accessibility button (optional, may not exist)
+		const mobileAccessibilityBtn = document.getElementById('mobileAccessibility');
+		
+		if (mobileAccessibilityBtn) {
+			mobileAccessibilityBtn.addEventListener('click', () => {
+				// Simple mobile accessibility - just increase font size
+				if (currentFontSize < 2) {
+					currentFontSize++;
+					updateFontSize();
+					mobileAccessibilityBtn.textContent = currentFontSize === 1 ? '🔧 A+' : '🔧 A++';
+					setTimeout(() => { mobileAccessibilityBtn.textContent = '🔧'; }, 2000);
+				} else {
+					currentFontSize = 0;
+					updateFontSize();
+					mobileAccessibilityBtn.textContent = '🔧';
+				}
+			});
+		}
+	</script>
+</body>
+</html>
+
+
